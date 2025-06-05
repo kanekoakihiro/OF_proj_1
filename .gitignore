@@ -1,0 +1,25 @@
+# Python-generated files
+scripts/__pycache__/
+scripts/*.py[oc]
+scripts/build/
+scripts/dist/
+scripts/wheels/
+scripts/*.egg-info
+
+# Virtual environments
+scripts/.venv
+scripts/.env
+
+bin/
+obj/
+.DS_Store
+*.log
+*.psd
+*.tmp
+*.swp
+*.swo
+*.db
+*.pyc
+__pycache__/
+*.o
+.vscode/
