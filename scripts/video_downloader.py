@@ -1,5 +1,6 @@
-import requests
 import os
+
+import requests
 from dotenv import load_dotenv
 
 load_dotenv()  # .env を読み込む
@@ -14,16 +15,13 @@ SEARCH_QUERY = "nature"
 DOWNLOAD_PATH = "video.mp4"
 TARGET_DURATION = 30  # 目標秒数
 
-headers = {
-    "Authorization": PEXELS_API_KEY
-}
+headers = {"Authorization": PEXELS_API_KEY}
 
-params = {
-    "query": SEARCH_QUERY,
-    "per_page": 5
-}
+params = {"query": SEARCH_QUERY, "per_page": 5}
 
-response = requests.get("https://api.pexels.com/videos/search", headers=headers, params=params)
+response = requests.get(
+    "https://api.pexels.com/videos/search", headers=headers, params=params
+)
 data = response.json()
 data = response.json()
 print(data)  # 🔍 ← これを追加
